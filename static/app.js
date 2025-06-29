@@ -14,18 +14,9 @@
  * * Main Dependencies: Leaflet.js, Leaflet.markercluster
  */
 
-fetch('footer.html')
-    .then((response) => {
-        return response.text
-    })
-    .then(text => {
-        document.querySelector("#footer-stub").innerHTML = text; 
-    });
-
 // =============================================================================
 //  1. MAP INITIALIZATION & CONFIGURATION
 // =============================================================================
-
 
 // Define the absolute geographical boundaries of the map to prevent scrolling too far.
 const southWest = L.latLng(-90, -180);
